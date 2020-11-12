@@ -1,0 +1,325 @@
+body {
+  font-family: "Lato", sans-serif;
+  width: 720px;
+  margin: auto;
+}
+#mainNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+.menuButton {
+  width: 30px;
+  height: 2px;
+  background-color: rgb(4, 19, 155);
+  margin: 7px 0;
+  transition: background-color 200ms;
+  transition: box-shadow 200ms;
+}
+
+.menuLink:hover .menuButton {
+  box-shadow: 2px 2px 3px #9c9c9c;
+  background-color: rgb(72, 72, 228);
+}
+
+.navbar-brand {
+  width: 7rem;
+  height: 3rem;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: rgb(4, 19, 155);
+  text-decoration: none;
+  text-align: center;
+  margin: 7px 0;
+  transition: color 200ms;
+}
+.navbar-brand:hover {
+  color: rgb(72, 72, 228);
+}
+
+#navbar-search {
+  height: 25px;
+  width: 30px;
+  margin-top: -3px;
+}
+
+.candidatePhoto {
+  width: 100%;
+  height: 40rem;
+  overflow: hidden;
+}
+
+.candidatePhoto img {
+  width: 100%;
+}
+
+.card {
+  margin-top: -3rem;
+  background-color: white;
+  border-radius: 3rem 3rem 0 0;
+  padding: 4rem 5rem;
+}
+.candidateTag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.candidateTag .candidateName h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.candidateTag .candidateName h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgb(141, 141, 141);
+  margin: 0.2rem 0 1.5rem 0;
+}
+
+.score {
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgb(72, 72, 228);
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.score span {
+  color: white;
+  line-height: 2rem;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+article {
+  color: rgb(150, 150, 150);
+  line-height: 26px;
+  font-size: 1rem;
+}
+
+hr {
+  margin: 2rem 0;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.candidateInformation {
+  display: grid;
+  grid-template-columns: repeat(4, 4fr);
+  grid-template-areas:
+    "content content content content"
+    "footer footer footer footer";
+  gap: 1.5rem;
+}
+
+.cards {
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(150, 150, 150);
+  border-radius: 0.5rem;
+  box-shadow: 2px 5px 8px #dadada;
+}
+
+.cards img {
+  width: 30px;
+}
+
+.candidatureStatus {
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(150, 150, 150);
+  grid-area: footer;
+  box-shadow: 2px 5px 8px #dadada;
+  border-radius: 0.5rem;
+}
+
+.candidatureStatus .statusSource {
+  background-color: rgb(240, 240, 240);
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 50%;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+.candidatureStatus .source {
+  font-size: 0.6rem;
+}
+
+.candidatureStatus .status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: rgb(51, 165, 112);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.candidatureStatus .status span {
+  color: white;
+}
+
+.candidateHistory {
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  box-shadow: 2px 5px 8px #dadada;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
+.candidateHistory span {
+  display: flex;
+  align-items: center;
+}
+
+.candidateHistory .history {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  background-color: rgb(15, 6, 139);
+  transition: color 200ms;
+}
+
+.candidateHistory .proposals {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  background-color: rgb(72, 72, 228);
+  transition: color 200ms;
+}
+
+.candidateHistory .history:hover,
+.candidateHistory .proposals:hover {
+  color: rgb(230, 240, 125);
+}
+
+.newsRelated h2,
+.otherCandidates h2 {
+  margin-top: 3rem;
+  font-size: 1.65rem;
+  font-weight: 700;
+}
+
+.newsBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news {
+  display: flex;
+  width: 30%;
+  height: 10rem;
+  color: white;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+#firstNews {
+  background-image: url(./images/first_news.jpg);
+}
+#secondNews {
+  background-image: url(./images/second_news.jpg);
+}
+#thirdNews {
+  background-image: url(./images/third_news.jpg);
+}
+
+.news span {
+  opacity: 0;
+  transition: opacity 200ms;
+  height: 100%;
+  width: 100%;
+  padding: 1rem 0.2rem;
+  text-align: center;
+  background-color: rgba(83, 83, 83, 0.658);
+}
+
+.news:hover span {
+  opacity: 1;
+}
+
+.othersBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.candidateMini {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.candidateMini:hover .miniName {
+  color: rgb(72, 72, 228);
+}
+
+.candidateMiniPicture {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem 0;
+  background-image: url(./images/barack_mini.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  transition: box-shadow 200ms;
+}
+
+.candidateMiniPicture:hover {
+  box-shadow: 0 6px 8px #9c9c9c;
+}
+
+.candidateMiniName {
+  text-align: center;
+}
+.miniName {
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition: color 200ms;
+}
+.miniDescription {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(150, 150, 150);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  background-color: rgb(72, 72, 228);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
